@@ -2,7 +2,7 @@
 --cor-de-fundo:#5a001b;
 --verde:#57e6ff;
 --branco-ativo:#57a0ff;
---botao-inativo:#57ddff;
+--botao-inativo:#fafafa;
 --texto-fundo:#c20c0c;
 }
 body{background-color:var(--cor-de-fundo);
@@ -22,4 +22,19 @@ body{background-color:var(--cor-de-fundo);
     text-align: center;
     width: 100%;
     font-size: 40px;
+}
+.botao{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #eb7070;
+    color: var(--botao-inativo);
+    display:flex;
+    justify-content: center;
+    padding: 1em;
+    font-size: 15px;
+    align-items: center;
+    width: 100%;
+    border-bottom: 4px solid var(--botao-ativo);
+    border-left: 2px solid var(--botao-ativo);
+    border-right: 2px solid var(--botao-ativo);
+    border-top:  none;
 }
