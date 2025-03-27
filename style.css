@@ -1,13 +1,13 @@
 :root{
---cor-de-fundo:#5a001b;
---verde:#57e6ff;
+--cor-de-fundo:#500219;
+--verde:#000000;
 --branco-ativo:#57a0ff;
 --botao-inativo:#fafafa;
---texto-fundo:#c20c0c;
+--texto-fundo:#c20c43;
 }
 body{background-color:var(--cor-de-fundo);
     color: var(aliceblue);
-    font-family:aqua;
+    font-family:rgb(185, 2, 2);
 }
 .conteudo-principal{
       display: flex;
@@ -25,7 +25,7 @@ body{background-color:var(--cor-de-fundo);
 }
 .botao{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: #eb7070;
+    background-color: #4e1212;
     color: var(--botao-inativo);
     display:flex;
     justify-content: center;
@@ -37,4 +37,25 @@ body{background-color:var(--cor-de-fundo);
     border-left: 2px solid var(--botao-ativo);
     border-right: 2px solid var(--botao-ativo);
     border-top:  none;
+}
+.botao:first-child{
+    border-radius: 40px 40px 0 0;
+}
+.botoes{
+    display: block;
+}
+.ativo{
+    background-color: var(--botao-ativo);
+    border-bottom: 4px solid var(--verde);
+}
+@media screen and (min-width:768px) {
+    .botoes{
+        display: flex;
+    }
+    .botao:first-child{
+        border-radius: 40px 0 0 0;
+    }
+    .botao:last-child{
+        border-radius: 0 40px 0 0;
+    }
 }
