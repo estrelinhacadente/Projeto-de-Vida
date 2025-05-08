@@ -59,3 +59,8 @@ body{background-color:var(--cor-de-fundo);
         border-radius: 0 40px 0 0;
     }
 }
+.aba-textos{
+    background-color: var(--texto-fundo);
+    padding: 40px;
+    border-radius: 0 0 40px 40px;
+}
